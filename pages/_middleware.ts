@@ -16,7 +16,6 @@ export default async function middleware(req: NextRequest) {
           token,
           new TextEncoder().encode(process.env.TOKENSECRET)
         );
-        console.log(payload);
         if (payload == null) {
           return NextResponse.redirect(url);
         }

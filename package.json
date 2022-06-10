@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.6",
     "@chakra-ui/icons": "^2.0.1",
     "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11",
@@ -17,6 +18,7 @@
     "bcrypt": "^5.0.1",
     "cookie": "^0.5.0",
     "framer-motion": "^6",
+    "graphql": "^16.5.0",
     "jose": "^4.8.1",
     "jsonwebtoken": "^8.5.1",
     "next": "^12.1.6",

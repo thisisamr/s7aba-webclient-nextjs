@@ -14,7 +14,6 @@ const validateAuth = (
       let user;
       try {
         const key = new TextEncoder().encode(process.env.TOKENSECRET);
-        console.log(key);
         const { payload } = await jose.jwtVerify(token, key);
         const id = payload.id as number;
         user = await prisma.user.findUnique({
