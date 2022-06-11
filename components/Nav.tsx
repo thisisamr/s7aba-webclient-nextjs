@@ -101,7 +101,7 @@ export default function Nav() {
                 <MenuItem
                   onClick={async () => {
                     try {
-                      await fetch("http://localhost:3000/api/logout", {
+                      await fetch("/api/logout", {
                         method: "POST",
                       });
                       router.push("/login");
