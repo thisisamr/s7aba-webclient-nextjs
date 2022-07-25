@@ -36,3 +36,8 @@ export const poulateTablePaymenttrasnsactions = gql`
     initPaymentTransactions(paymentTransactions: $input)
   }
 `;
+export const populateTableuseraddresses = gql`
+  mutation initUserAddresses($input: [UserAddressesInput!]) {
+    initUserAddresses(UserAddresses: $input)
+  }
+`;

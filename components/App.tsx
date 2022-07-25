@@ -58,6 +58,7 @@ const App: React.FC<{
       await getem("requests");
       await getem("shippingorders");
       await getem("paymenttrasnsactions");
+      await getem("useraddresses");
       toggle(false);
       setSpinner(false);
       toast({

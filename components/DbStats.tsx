@@ -34,7 +34,9 @@ const DbStats: React.FC = () => {
     refetch: refetchstats,
   } = useQuery(postgrestStats, { client: postgresclient });
   //handle stats error
-
+  if (stats) {
+    console.log(stats);
+  }
   if (statsError) {
     // eslint-disable-next-line no-console
     console.log(statsError);
@@ -104,8 +106,8 @@ const DbStats: React.FC = () => {
                   cursor={"pointer"}
                 >
                   <Td>{i + 1}</Td>
-                  <Td>{table.tablename}</Td>
-                  <Td textAlign={"center"}>{table.count}</Td>
+                  <Td>{table?.tablename}</Td>
+                  <Td textAlign={"center"}>{table?.count}</Td>
                   {/* {<Td>{<CheckCircleIcon color={"green.300"} />}</Td>} */}
                 </Tr>
               );
